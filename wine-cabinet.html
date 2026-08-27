@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JC120GE 双开门嵌入式酒柜 — 项目详情</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif; background: #f8fafc; color: #1e293b; line-height: 1.8; }
+        .container { max-width: 860px; margin: 0 auto; padding: 40px 20px; }
+        .back-link { display: inline-flex; align-items: center; gap: 6px; color: #64748b; text-decoration: none; font-size: 14px; margin-bottom: 24px; transition: color 0.2s; }
+        .back-link:hover { color: #1e293b; }
+        .hero { background: linear-gradient(135deg, #1e293b 0%, #334155 100%); border-radius: 16px; padding: 48px 36px; color: #fff; margin-bottom: 32px; }
+        .hero h1 { font-size: 28px; margin-bottom: 12px; }
+        .hero .meta { font-size: 15px; opacity: 0.7; }
+        .hero .desc { font-size: 16px; margin-top: 20px; opacity: 0.9; line-height: 1.9; }
+        .section { background: #fff; border-radius: 12px; padding: 32px; margin-bottom: 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+        .section h2 { font-size: 20px; color: #334155; margin-bottom: 20px; padding-bottom: 8px; border-bottom: 2px solid #f59e0b; display: inline-block; }
+        .section .images { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 12px; margin-top: 16px; }
+        .section .images img { width: 100%; height: 200px; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); cursor: pointer; transition: transform 0.2s; }
+        .section .images img:hover { transform: scale(1.02); }
+        .footer { text-align: center; color: #94a3b8; font-size: 13px; margin-top: 40px; }
+        .lightbox { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.85); z-index: 9999; justify-content: center; align-items: center; cursor: pointer; }
+        .lightbox.show { display: flex; }
+        .lightbox img { max-width: 92vw; max-height: 92vh; border-radius: 8px; }
+        .i18n { display: none; }
+        .i18n.active { display: block; }
+        span.i18n.active { display: inline; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="javascript:history.back()" class="back-link">← <span class="i18n zh active">返回</span><span class="i18n en">Back</span></a>
+
+        <div class="hero">
+            <h1>JC120GE <span class="i18n zh active">双开门嵌入式酒柜</span><span class="i18n en">Dual-Door Embedded Wine Cabinet</span></h1>
+            <p class="meta"><span class="i18n zh active">美的集团股份有限公司</span><span class="i18n en">Midea Group</span> · 2025.07 - 2025.09 · <span class="i18n zh active">参与人</span><span class="i18n en">Participant</span></p>
+            <p class="i18n zh desc active">本项目基于 60L 酒柜进行双箱胆扩容，构建物理隔离式双腔体（总容 120L），通过分路冷量供给及背部双风门隔离风道，同时搭配差异化门体（双层/三层玻璃），以实现两温区精准独立控温，适配不同酒类需求，并结合交错层架提升空间利用率，达成零串温、高能效的模块化储酒系统。</p>
+            <p class="i18n en desc">This project expanded the dual-cavity capacity from 60L to 120L with a physically isolated dual-chamber system. Through split-path cooling supply and rear dual-damper isolated air ducts, combined with differentiated door designs (double/triple-layer glass), it achieves precise independent temperature control for two zones, catering to different wine storage needs. Interleaved shelving improves space utilization, resulting in a zero-cross-contamination, high-efficiency modular wine storage system.</p>
+        </div>
+
+        <!-- Section 1: 课题内容 -->
+        <div class="section">
+            <h2><span class="i18n zh active">课题内容</span><span class="i18n en">Project Topics</span></h2>
+            <p class="i18n zh active" style="color:#64748b;">本项目围绕以下核心课题展开研究与实践：</p>
+            <p class="i18n en" style="color:#64748b;">The project focused on the following core topics:</p>
+            <ul class="i18n zh active" style="margin-top:12px; padding-left:20px; color:#475569; line-height:2.2;">
+                <li>双箱胆扩容方案设计与结构优化</li>
+                <li>物理隔离式双腔体构建与分路冷量供给系统设计</li>
+                <li>背部双风门隔离风道方案验证</li>
+                <li>差异化门体方案（双层/三层玻璃）对比与选择</li>
+                <li>交错层架设计提升空间利用率</li>
+                <li>零串温、高能效模块化储酒系统集成</li>
+            </ul>
+            <ul class="i18n en" style="margin-top:12px; padding-left:20px; color:#475569; line-height:2.2;">
+                <li>Dual-cavity expansion design and structural optimization</li>
+                <li>Physically isolated dual-chamber construction and split-path cooling supply design</li>
+                <li>Rear dual-damper isolated air duct validation</li>
+                <li>Differentiated door design (double/triple-layer glass) comparison and selection</li>
+                <li>Interleaved shelving design for improved space utilization</li>
+                <li>Zero-cross-contamination, high-efficiency modular wine storage system integration</li>
+            </ul>
+        </div>
+
+        <!-- Section 2: 样机组装与调试 -->
+        <div class="section">
+            <h2><span class="i18n zh active">样机的组装与调试</span><span class="i18n en">Prototype Assembly & Commissioning</span></h2>
+            <p class="i18n zh active" style="color:#64748b; margin-bottom:12px;">参与酒柜样机的组装与调试工作，熟悉并掌握了酒柜的制造原理和工艺规程。</p>
+            <p class="i18n en" style="color:#64748b; margin-bottom:12px;">Participated in the assembly and commissioning of wine cabinet prototypes, gaining familiarity with manufacturing principles and process specifications.</p>
+            <div class="images">
+                <img loading="lazy" src="/projects/wine-cabinet/page11_img1.jpg" alt="Assembly 1" onclick="openLightbox(this.src)">
+                <img loading="lazy" src="/projects/wine-cabinet/page11_img2.jpeg" alt="Assembly 2" onclick="openLightbox(this.src)">
+                <img loading="lazy" src="/projects/wine-cabinet/page11_img3.jpg" alt="Assembly 3" onclick="openLightbox(this.src)">
+                <img loading="lazy" src="/projects/wine-cabinet/page12_img4.jpeg" alt="Assembly 4" onclick="openLightbox(this.src)">
+                <img loading="lazy" src="/projects/wine-cabinet/page12_img5.jpeg" alt="Assembly 5" onclick="openLightbox(this.src)">
+                <img loading="lazy" src="/projects/wine-cabinet/page12_img6.jpeg" alt="Assembly 6" onclick="openLightbox(this.src)">
+                <img loading="lazy" src="/projects/wine-cabinet/page12_img7.jpeg" alt="Assembly 7" onclick="openLightbox(this.src)">
+            </div>
+        </div>
+
+        <!-- Section 3: 立柱设计与优化 -->
+        <div class="section">
+            <h2><span class="i18n zh active">酒柜的部分结构（立柱）设计与优化</span><span class="i18n en">Structural Design & Optimization (Columns)</span></h2>
+            <p class="i18n zh active" style="color:#64748b; margin-bottom:12px;">参与酒柜立柱等部分结构的优化设计工作。</p>
+            <p class="i18n en" style="color:#64748b; margin-bottom:12px;">Participated in the structural optimization design of wine cabinet columns and related components.</p>
+            <div class="images">
+                <img loading="lazy" src="/projects/wine-cabinet/page15_img4.jpeg" alt="Column Design 1" onclick="openLightbox(this.src)">
+                <img loading="lazy" src="/projects/wine-cabinet/page15_img5.jpeg" alt="Column Design 2" onclick="openLightbox(this.src)">
+                <img loading="lazy" src="/projects/wine-cabinet/page15_img6.jpeg" alt="Column Design 3" onclick="openLightbox(this.src)">
+                <img loading="lazy" src="/projects/wine-cabinet/page15_img7.jpeg" alt="Column Design 4" onclick="openLightbox(this.src)">
+                <img loading="lazy" src="/projects/wine-cabinet/page15_img10.jpeg" alt="Column Design 5" onclick="openLightbox(this.src)">
+            </div>
+        </div>
+
+        <!-- Section 4: 质控点交底书 -->
+        <div class="section">
+            <h2><span class="i18n zh active">产品质控点交底书的撰写</span><span class="i18n en">Quality Control Documentation</span></h2>
+            <p class="i18n zh active" style="color:#64748b; margin-bottom:12px;">起草并撰写产品质控点交底书，锻炼了协作沟通能力，并积累了工作经验。</p>
+            <p class="i18n en" style="color:#64748b; margin-bottom:12px;">Drafted and authored product quality control disclosure documents, strengthening collaboration and communication skills while gaining work experience.</p>
+            <div class="images">
+                <img loading="lazy" src="/projects/wine-cabinet/page13_img8.jpg" alt="QC Doc 1" onclick="openLightbox(this.src)">
+                <img loading="lazy" src="/projects/wine-cabinet/page13_img9.jpg" alt="QC Doc 2" onclick="openLightbox(this.src)">
+            </div>
+        </div>
+
+        <p class="footer">Xiuchen Shen · PRISM</p>
+    </div>
+
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+        <img id="lightboxImg" src="" alt="">
+    </div>
+
+    <script>
+        function getLang() {
+            var params = new URLSearchParams(window.location.search);
+            return params.get('lang') === 'en' ? 'en' : 'zh';
+        }
+        function applyLang(lang) {
+            document.querySelectorAll('.i18n').forEach(function(el) {
+                el.classList.toggle('active', el.classList.contains(lang));
+            });
+            document.documentElement.lang = lang === 'en' ? 'en' : 'zh-CN';
+            document.title = lang === 'en' ? 'JC120GE Dual-Door Embedded Wine Cabinet — Project Details' : 'JC120GE 双开门嵌入式酒柜 — 项目详情';
+        }
+        applyLang(getLang());
+
+        function openLightbox(src) {
+            document.getElementById('lightboxImg').src = src;
+            document.getElementById('lightbox').classList.add('show');
+        }
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('show');
+        }
+    </script>
+</body>
+</html>
