@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>映译 YingYi — 电影字幕翻译与视频处理工具</title>
+<style>
+  :root { --bg:#0b0908; --panel:#14100d; --line:#2b231c; --text:#ece4d8; --dim:#a89a8a; --accent:#e8a33d; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:"Microsoft YaHei UI","Microsoft YaHei",sans-serif; background:var(--bg); color:var(--text); line-height:1.7; }
+  .film { height:8px; background:repeating-linear-gradient(90deg,#1a1510 0 14px,transparent 14px 20px); border-bottom:1px solid var(--line); }
+  .wrap { max-width:860px; margin:0 auto; padding:48px 24px 72px; }
+  header { display:flex; align-items:center; gap:16px; margin-bottom:40px; }
+  .logo { width:56px; height:56px; border-radius:14px; background:linear-gradient(135deg,#f5b942,#b97f22); display:grid; place-items:center; font-size:28px; font-weight:700; color:#241503; box-shadow:0 0 24px rgba(232,163,61,.25); }
+  h1 { font-size:26px; letter-spacing:2px; }
+  .sub { color:var(--dim); font-size:14px; margin-top:4px; }
+  .card { background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:24px; margin-bottom:20px; }
+  h2 { font-size:17px; color:var(--accent); letter-spacing:1px; margin-bottom:12px; }
+  ul { list-style:none; }
+  li { padding:5px 0; color:var(--dim); }
+  li b { color:var(--text); font-weight:600; }
+  a.btn { display:inline-block; margin-top:8px; padding:12px 28px; border-radius:10px; background:linear-gradient(135deg,#f5b942,#b97f22); color:#241503; font-weight:700; text-decoration:none; box-shadow:0 0 18px rgba(232,163,61,.25); }
+  a.btn:hover { filter:brightness(1.1); }
+  .note { font-size:13px; color:var(--dim); margin-top:10px; }
+  .steps { counter-reset:s; }
+  .steps li { counter-increment:s; padding-left:8px; }
+  .steps li::before { content:counter(s); display:inline-block; width:20px; height:20px; line-height:20px; text-align:center; border-radius:50%; background:#2b231c; color:var(--accent); font-size:12px; margin-right:10px; }
+  footer { text-align:center; color:#6f6357; font-size:13px; margin-top:32px; }
+  a { color:var(--accent); }
+</style>
+</head>
+<body>
+<div class="film"></div>
+<div class="wrap">
+  <header>
+    <div class="logo">映</div>
+    <div>
+      <h1>映译 YingYi</h1>
+      <div class="sub">Windows 电影字幕翻译与视频处理工具 · 抖音电影切片一站式处理</div>
+    </div>
+  </header>
+
+  <div class="card">
+    <h2>它能做什么</h2>
+    <ul>
+      <li><b>双语字幕烧录</b> — 提取电影内嵌字幕或加载 .srt，AI 翻译成中文，英文在下方、中文在上方压进画面，字号颜色可调</li>
+      <li><b>多语言翻译</b> — 35 种源语言自动检测，19 种目标语言，DeepSeek 驱动</li>
+      <li><b>打码</b> — 整屏糊掉或框选局部模糊，强度三档，时间前后可调</li>
+      <li><b>去水印</b> — 框选台标、logo，全片智能抹除</li>
+      <li><b>前方高能倒计时</b> — 指定时刻前，画面左下角出现 3-2-1 红色大字</li>
+      <li><b>滤镜</b> — 去血色（柔和/强力）、黑白，按时间段生效</li>
+      <li><b>切段</b> — 自动均分或手动切点，切口精确到帧，直接发抖音</li>
+      <li><b>硬件加速</b> — Intel / NVIDIA / AMD 显卡自动检测，4K 压制飞快</li>
+      <li><b>HDR 转换</b> — HDR 片源自动色彩转换，画面不发灰；杜比音轨自动转通用格式</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>下载</h2>
+    <a class="btn" href="https://github.com/sxczry-dot/yingyi/releases">GitHub Releases 下载绿色版</a>
+    <p class="note">绿色版约 460 MB（含视频引擎与字体），解压后双击「映译.exe」即可使用。整个文件夹可拷到任意 Windows 11 电脑直接运行，无需安装任何环境。</p>
+  </div>
+
+  <div class="card">
+    <h2>使用步骤</h2>
+    <ul class="steps">
+      <li>打开电影（mp4 / mkv 等），自动检测内嵌字幕，或手动选择 .srt 文件</li>
+      <li>「设置」里填写 DeepSeek API Key，字幕页选择语言后点翻译（约 1387 条字幕几分钟，成本几分钱）</li>
+      <li>按需设置打码、倒计时、滤镜、切段，所有设置自动保存</li>
+      <li>点「导出」，成片自动保存到电影旁的「电影名_导出」文件夹并自动打开</li>
+    </ul>
+  </div>
+
+  <footer>
+    源码：<a href="https://github.com/sxczry-dot/yingyi">github.com/sxczry-dot/yingyi</a> · 作者：<a href="/">xiuchenshen.com</a>
+  </footer>
+</div>
+</body>
+</html>
